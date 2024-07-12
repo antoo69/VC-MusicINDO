@@ -25,11 +25,11 @@ def _start(client, message):
                         "📝 Tambahkan saya ke group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📮 Channel", url=f"https://t.me/{SUPPORT_CHANNEL}"), 
+                        "📮 Channel", url=f"https://t.me/Nenen_degrees"), 
                     InlineKeyboardButton(
-                        "🏷 Group", url=f"https://t.me/{SUPPORT_GROUP}"),
+                        "🏷 Group", url=f"https://t.me/BestieVirtual"),
                     InlineKeyboardButton(
-                        "✏️ Owner", url=f"https://t.me/{OWNER_USERNAME}")
+                        "✏️ Owner", url=f"https://t.me/fsyrl")
                 ]
             ]
         ),
@@ -44,7 +44,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🏷 Owner Bot", url=f"https://t.me/{OWNER_USERNAME}"
+                        "🏷 Owner Bot", url=f"https://t.me/fsyrl"
                     )
                 ]
             ]
@@ -82,12 +82,12 @@ def map(pos):
             [InlineKeyboardButton(text = 'Next', callback_data = "help+2")]
         ]
     elif(pos==len(tr.HELP_MSG)-1):
-        url = f"https://t.me/{SUPPORT_GROUP}"
+        url = f"https://t.me/Nenen_degrees"
         button = [
             [InlineKeyboardButton("📝 Tambahkan saya ke group", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '📮 Channel', url=f"https://t.me/{SUPPORT_CHANNEL}"),
-             InlineKeyboardButton(text = '🏷 Group', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '💡 Owner Bot', url=f"https://t.me/{OWNER_USERNAME}"),
+            [InlineKeyboardButton(text = '📮 Channel', url=f"https://t.me/Nenen_degrees"),
+             InlineKeyboardButton(text = '🏷 Group', url=f"https://t.me/BestieVirtual")],
+            [InlineKeyboardButton(text = '💡 Owner Bot', url=f"https://t.me/fsyrl"),
              InlineKeyboardButton(text = '✏️ Owner Project', url=f"https://t.me/ZendYNS")],
             [InlineKeyboardButton(text = 'Kembali', callback_data = f"help+{pos-1}")]
         ]
